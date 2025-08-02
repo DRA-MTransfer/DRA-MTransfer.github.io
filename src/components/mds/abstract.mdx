@@ -1,0 +1,10 @@
+# Abstract
+
+Motion transfer is an important task in video editing with numerous practical applications. Current leading approaches fine-tune LoRA to adapt the video diffusion model (VDM) to the motion in the source video. However, due to the limitation of fine-tuning on a single video, it is challenging to ensure the physical realism of the motion. For example, when editing a car with rotating tires to a horse with swing legs, the legs appear stiff, and the overall posture is nearly unchanged, referred to **intrinsic motion insensitivity**. 
+
+To tackle this issue, we propose **DRA-MTransfer** to utilize the potential motion knowledge in the pre-trained VDM to overcome the limitation imposed by LoRAs. 
+
+- First, we propose a **spatial consistency guided re-weighting (SCR)** module to activate the motion knowledge from VDM in a coarse grained manner. SCR employs the Gaussian distribution to re-weight the temporal loss, hence smoothing the overstrict constraint caused by LoRA. Moreover, based on spatial consistency, we adaptively adjust the weight of the LoRA to balance motion consistency and intrinsic motion awareness. 
+- Next, we propose a **synergistic temporal re-attention (STR)** module to integrate the correct motion knowledge from VDM in a fine grained manner. Specifically, we improve the temporal attention mechanism to inject motion from VDM in the foreground region, and sharpen the attention maps to avoid the artifacts. 
+
+Extensive experiments demonstrate the superiority of DRA-MTransfer for intrinsic-aware motion transfer in video editing.

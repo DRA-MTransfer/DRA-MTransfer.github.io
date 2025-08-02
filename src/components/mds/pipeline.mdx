@@ -1,0 +1,6 @@
+# Pipeline
+
+![](./pipeline/pipeline.jpg)
+
+- **Spatial Consistency Guided Re-Weighting (SCR)**: During training, $\mathcal{L}_{\mathcal{G}}$ uses Gaussian weighting to smooth the penalty on foreground region. During inference, temporal LoRA weight ($\omega^t$) is adaptively adjusted by the spatial consistency of foreground masks, and spatial LoRA weight ($\omega^s$) is determined by a classifier model based on the prompt pair and weighting dictionary.
+- **Synergistic Temporal Re-Attention (STR)**: During inference, Foreground Enhanced Attention (FEA) temporally integrates keys and values from VDM and VDM-A to introduce correct IMP. FEA considers general and special motion knowledge, and performs a sharpen operation to mitigate artifacts.
