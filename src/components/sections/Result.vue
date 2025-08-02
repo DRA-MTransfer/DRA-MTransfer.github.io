@@ -2,8 +2,8 @@
 import { ref } from 'vue';
 
 const image_paths = [
-    ["./result/swan-horse-car.gif", "Different Subjects", "Black Swan (GT) - Horse - Bus - Car"],
-    ["./result/man-horse.gif", "Multi Subjects", "Man (GT) - Horse - Horse with Man"],
+    ["./result/swan-horse-car.gif", "Different Subject", "Black Swan (GT) - Horse - Bus - Car"],
+    ["./result/man-horse.gif", "Multi Subject", "Man (GT) - Horse - Horse with Man"],
     ["./result/jellyfish-fish.gif", "Style Editing", "Jelly Fish (GT) - Shark - Fish with Animate Style"],
     ["./result/cow-crocodile.gif", "Background Editing", "Cow (GT) - Crocodile - Crocodile in Puddle"],
     ["./result/rocket-bird.gif", "Different Size", "Rocket (GT) - Small Bird - Big Bird"],
