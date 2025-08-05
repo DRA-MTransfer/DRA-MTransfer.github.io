@@ -7,7 +7,7 @@ import pipeline from '../mds/pipeline.mdx';
     <el-divider />
 
     <el-row justify="center">
-        <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
+        <el-col :xs="24" :sm="20" :md="18" :lg="16" :xl="14">
             <pipeline />
         </el-col>
     </el-row>

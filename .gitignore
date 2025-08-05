@@ -28,3 +28,7 @@ coverage
 *.sw?
 yarn.lock
 public/compare/*
+public/traning-based-method-compare/raw/*
+public/ours-result/raw/*
+public/metrics/*
+public/ablation-*

@@ -2,14 +2,16 @@
 import Title from './sections/Title.vue'
 import Abstract from './sections/Abstract.vue'
 import Pipeline from './sections/Pipeline.vue'
-import Result from './sections/Result.vue'
+import OursResult from './sections/Ours-Result.vue'
+import CompareResult from './sections/Compare-Result.vue'
 
 export default {
   components: {
     Title,
     Abstract,
     Pipeline,
-    Result,
+    OursResult,
+    CompareResult,
   }
 }
 </script>
@@ -18,5 +20,6 @@ export default {
   <Title/>
   <Abstract/>
   <Pipeline/>
-  <Result/>
+  <OursResult/>
+  <CompareResult/>
 </template>

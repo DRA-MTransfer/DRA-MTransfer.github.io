@@ -134,8 +134,8 @@ const title_supp_color = '#000000'
 }
 
 .logo {
-  width: 120px; 
-  height: 120px;
+  width: 100px; 
+  height: 100px;
   border-radius: 50%;
   box-shadow: #ced3dc 0px 0px 3px 2px;
   margin-top: 40px;
