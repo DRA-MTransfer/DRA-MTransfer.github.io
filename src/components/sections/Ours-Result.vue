@@ -66,7 +66,7 @@ const paths = [
           <el-row justify="space-around">
             <el-col :span="24" v-for="(path, index) in paths" :key="index">
               <h3 style="margin: 0px 0px 10px 0px;">⬇️ {{path[1]}}</h3>
-              <video muted preload autoplay playsinline loop>
+              <video muted autoplay playsinline loop>
                 <source :src="path[0]" type="video/mp4">
               </video>
               <el-row justify="space-around" style="margin-top: -10px;">
