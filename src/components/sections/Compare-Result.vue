@@ -62,7 +62,7 @@ export default {
           }"
           >
           <swiper-slide v-for="path in paths">
-            <video muted preload autoplay playsinline loop>
+            <video muted autoplay playsinline loop>
               <source :src="path[0]" type="video/mp4">
             </video>
             <p style="text-align: center; align-content: center; font-size: 13px;">{{path[1]}}</p>
