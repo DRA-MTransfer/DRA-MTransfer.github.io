@@ -58,7 +58,7 @@ const paths = [
     <el-divider />
 
     <el-row justify="center">
-      <h1 class="section-title">More Comparison Results</h1>
+      <h1 class="section-title">More Ours Results</h1>
     </el-row>
 
     <el-row justify="center">
