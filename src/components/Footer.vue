@@ -12,10 +12,10 @@ const links = {
   
   <div class="bg">
     
-    <el-watermark :content="['DRA-MTransfer']" :gap="['60','60']" :z-index="0">
+    <el-watermark :content="['DRA-MTransfer']" :gap="['60','0']" :z-index="0">
       <el-row justify="center">
         <p class="footer">
-          Anonymous AAAI 2026 Submission
+          DRA-MTransfer
         </p>
       </el-row>
     </el-watermark>

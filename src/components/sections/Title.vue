@@ -40,7 +40,7 @@ const title_supp_color = '#000000'
 
     <!-- 强调内容 -->
     <el-row justify="center" class="emphasis">
-      Anonymous AAAI 2026 Submission
+      Guoli Jia, Zhiyuan Ma, Junyao Hu, Xinwei Long, Weicheng Wang, Kai Tian, Bowen Zhou
     </el-row>
 
   </div>
@@ -112,8 +112,7 @@ const title_supp_color = '#000000'
 
 /* 强调信息属性 */
 .emphasis {
-  color: chocolate;
-  font-weight: bold;
+  color: rgb(0, 0, 0);
   margin: 0 0 35px 0;
   font-size: 22px;
   text-align: center;

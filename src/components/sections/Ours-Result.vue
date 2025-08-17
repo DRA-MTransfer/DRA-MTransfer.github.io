@@ -3,52 +3,85 @@ import { ref } from 'vue';
 
 const paths = [
   [
-    "/ours-result/ours-blackswan.mp4", 
-    "Different Subject", 
-    "Source: Black Swan",
-    "Edit: Horse",
-    "Edit: Gray Bus",
-    "Edit: Gray Car",
+    "IMP & Different Subject", 
+    [
+      [
+        "/ours-result/ours-blackswan.mp4", 
+        "Source: Black Swan",
+        "Edit: Horse",
+        "Edit: Gray Bus",
+        "Edit: Gray Car",
+      ],
+      [
+        "/ours-result/ours-jellyfish.mp4", 
+        "Source: Jellyfish",
+        "Edit: Turtle",
+        "Edit: Whale",
+        "",
+      ]
+    ],
   ],
   [
-    "/ours-result/ours-man.mp4", 
-    "Multi Subject", 
-    "Source: Man",
-    "Edit: Horse",
-    "Edit: Horse with Man",
-    "Edit: Plane",
+    "IMP & Multi Subject", 
+    [
+      [ 
+        "/ours-result/ours-man.mp4", 
+        "Source: Man",
+        "Edit: Horse",
+        "Edit: Horse with Man",
+        "Edit: Plane",
+      ],
+      [
+        "/ours-result/ours-bear-ball.mp4", 
+        "Source: Bear with Ball",
+        "Edit: Dog with Ball",
+        "",
+        "",
+      ]
+    ],
   ],
   [
-    "/ours-result/ours-jellyfish.mp4", 
-    "Style Editing", 
-    "Source: Jellyfish",
-    "Edit: Shark",
-    "Edit: Fish with Animate Style",
-    "",
+    "IMP & Background Editing", 
+    [
+      [
+        "/ours-result/ours-cow.mp4", 
+        "Source: Cow",
+        "Edit: Crocodile",
+        "Edit: Crocodile in Puddle",
+        "",
+      ]
+    ],
   ],
   [
-    "/ours-result/ours-cow.mp4", 
-    "Background Editing", 
-    "Source: Cow",
-    "Edit: Crocodile",
-    "Edit: Crocodile in Puddle",
-    ""
+    "IMP & Different Size", 
+    [
+      [ 
+        "/ours-result/ours-rocket.mp4", 
+        "Source: Rocket",
+        "Edit: Small Bird",
+        "Edit: Big Bird",
+        "",
+      ]
+    ],
   ],
   [
-    "/ours-result/ours-rocket.mp4", 
-    "Different Size", 
-    "Source: Rocket",
-    "Edit: Small Bird",
-    "Edit: Big Bird",
-    ""
-  ],
-  [
-    "/ours-result/ours-ship.mp4", 
-    "Others", 
-    "Source: Ship",
-    "Edit: Car",
-    "",
-    "",
+    "More IMP Results", 
+    [
+      [ 
+        "/ours-result/ours-bus.mp4", 
+        "Source: Bus",
+        "Edit: Tiger",
+        "",
+        "",
+      ],
+      [
+        "/ours-result/ours-car.mp4", 
+        "Source: Car",
+        "Edit: Leopard",
+        "",
+        "",
+      ]
+    ],
   ],
 ]
 </script>
@@ -58,24 +91,26 @@ const paths = [
     <el-divider />
 
     <el-row justify="center">
-      <h1 class="section-title">More Ours Results</h1>
+      <h1 class="section-title">Ours Results</h1>
     </el-row>
 
     <el-row justify="center">
         <el-col :xs="24" :sm="20" :md="18" :lg="16" :xl="14">
           <el-row justify="space-around">
             <el-col :span="24" v-for="(path, index) in paths" :key="index">
-              <h3 style="margin: 0px 0px 10px 0px;">⬇️ {{path[1]}}</h3>
-              <video muted autoplay playsinline loop>
-                <source :src="path[0]" type="video/mp4">
-              </video>
-              <el-row justify="space-around" style="margin-top: -10px;">
-                <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{path[2]}}</p>
-                <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{path[3]}}</p>
-                <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{path[4]}}</p>
-                <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{path[5]}}</p>
+              <h3 style="margin: 0px 0px 10px 0px;">⬇️ {{path[0]}}</h3>
+              <el-row justify="center" v-for="(video, idx) in path[1]" :key="idx" style="margin: 0px;" >
+                <video muted autoplay playsinline loop><source :src="video[0]" type="video/mp4"></video>
+                <el-col>
+                  <el-row justify="space-around">
+                    <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{video[1]}}</p>
+                    <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{video[2]}}</p>
+                    <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{video[3]}}</p>
+                    <p style="width: 24%; text-align: center; align-content: center; margin: 0; font-size: 13px;">{{video[4]}}</p>
+                  </el-row>
+                </el-col>
               </el-row>
-              <el-divider style="margin: -10px 0px 20px 0px;" v-if="index !== paths.length - 1"/>
+              <el-divider style="margin: 20px 0px 10px 0px;" v-if="index !== paths.length - 1"/>
             </el-col>
           </el-row>
         </el-col>
