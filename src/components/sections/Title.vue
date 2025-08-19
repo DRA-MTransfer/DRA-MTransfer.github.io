@@ -40,10 +40,17 @@ const title_supp_color = '#000000'
 
     <!-- 强调内容 -->
     <el-row justify="center" class="emphasis">
-      Guoli Jia, Zhiyuan Ma, Junyao Hu, Xinwei Long, Weicheng Wang, Kai Tian, Bowen Zhou
+      <el-link href="https://scholar.google.cz/citations?&user=A6V0JDAAAAAJ" target="_blank" type="primary">Guoli Jia</el-link>,&ensp;
+      <el-link href="https://c3i.ee.tsinghua.edu.cn/author/%E9%A9%AC%E5%BF%97%E8%BF%9C" target="_blank" type="primary">Zhiyuan Ma</el-link>,&ensp;
+      <el-link href="https://junyaohu.github.io/" target="_blank" type="primary">Junyao Hu</el-link>,&ensp;
+      <el-link href="https://scholar.google.com/citations?&user=gSA_egQAAAAJ" target="_blank" type="primary">Xinwei Long</el-link>,&ensp;
+      <el-link href="#" target="_blank" type="primary">Weicheng Wang</el-link>,&ensp;
+      <el-link href="https://c3i.ee.tsinghua.edu.cn/author/%E7%94%B0%E9%94%B4/" target="_blank" type="primary">Kai Tian</el-link>,&ensp;
+      <el-link href="https://scholar.google.com/citations?user=h3Nsz6YAAAAJ" target="_blank" type="primary">Bowen Zhou</el-link>
     </el-row>
 
   </div>
+
 </template>
 
 <style scoped>
@@ -147,15 +154,18 @@ a:-webkit-any-link {
 }
 
 /* 取消鼠标焦点悬浮在链接上的颜色装饰 */
-a:hover {
+/* a:hover {
   color: inherit;
   border-bottom: none;
-}
+} */
 
 /* 链接装饰，取消下划线和链接颜色 */
-a {
+/* a {
 	text-decoration: None;
 	color: inherit;
-}
+} */
 
+.el-link {
+  font-size: 22px;
+}
 </style>

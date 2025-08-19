@@ -17,7 +17,7 @@ const paths = [
         "Source: Jellyfish",
         "Edit: Turtle",
         "Edit: Whale",
-        "",
+        "Edit: Shark",
       ]
     ],
   ],
@@ -32,11 +32,11 @@ const paths = [
         "Edit: Plane",
       ],
       [
-        "/ours-result/ours-bear-ball.mp4", 
+        "/ours-result/ours-bear-dog-rabbit-bird.mp4", 
         "Source: Bear with Ball",
         "Edit: Dog with Ball",
-        "",
-        "",
+        "Source: Two Rabbits",
+        "Edit: Two Birds",
       ]
     ],
   ],
@@ -68,18 +68,18 @@ const paths = [
     "More IMP Results", 
     [
       [ 
-        "/ours-result/ours-bus.mp4", 
+        "/ours-result/ours-bus-tiger-goat-eagle.mp4", 
         "Source: Bus",
         "Edit: Tiger",
-        "",
-        "",
+        "Source: Goat",
+        "Edit: Eagle",
       ],
       [
-        "/ours-result/ours-car.mp4", 
+        "/ours-result/ours-car-leopard-bear-car.mp4", 
         "Source: Car",
         "Edit: Leopard",
-        "",
-        "",
+        "Source: Bear",
+        "Edit: Car",
       ]
     ],
   ],
