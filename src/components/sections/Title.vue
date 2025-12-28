@@ -13,7 +13,7 @@ const title = 'DRA-MTransfer: '
 const title_color = '#42B883'
 
 // 标题补充，没有则置为''即可
-const title_supp = 'Dual Grained Re-Adaptation for Intrinsic-Aware Motion Transfer in Video Editing'
+const title_supp = 'Dual Grained Re-Adaptation for Intrinsic-Aware Video Motion Transfer'
 
 // 标题补充颜色
 const title_supp_color = '#000000'

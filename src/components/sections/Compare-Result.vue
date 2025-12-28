@@ -18,11 +18,11 @@ export default {
       ],
       // 选择要轮播的照片
       paths: [
-        ["/traning-based-method-compare/bear-eagle.mp4", "Source: Bear → Edit: Eagle"],
-        ["/traning-based-method-compare/goat-man.mp4", "Source: Goat → Edit: Man"],
-        ["/traning-based-method-compare/man-horse.mp4", "Source: Man → Edit: Horse"],
-        ["/traning-based-method-compare/rocket-bird.mp4", "Source: Rocket → Edit: Bird"],
-        ["/traning-based-method-compare/soccerball-cat.mp4", "Source: Soccerball → Edit: Cat"],
+        ["/traning-based-method-compare/bear-eagle-new.mp4", ""],
+        ["/traning-based-method-compare/goat-man-new.mp4", ""],
+        ["/traning-based-method-compare/man-horse-new.mp4", ""],
+        ["/traning-based-method-compare/rocket-bird-new.mp4", ""],
+        ["/traning-based-method-compare/soccerball-cat-new.mp4", ""],
       ],
     }
   }

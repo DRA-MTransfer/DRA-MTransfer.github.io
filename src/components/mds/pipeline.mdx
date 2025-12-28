@@ -1,6 +1,6 @@
 # Pipeline
 
-![](./pipeline/pipeline.jpg)
+![](./pipeline/pipeline-new.jpg)
 
-- **Spatial Consistency Guided Re-Weighting (SCR)**: During training, $\mathcal{L}_{\mathcal{G}}$ uses Gaussian distribution to smooth the constraint of LoRA. During inference, temporal LoRA weight ($\omega^t$) is adaptively adjusted by the spatial consistency of foreground masks, and spatial LoRA weight ($\omega^s$) is determined by a classifier model based on the prompt pair and weighting dictionary.
-- **Synergistic Temporal Re-Attention (STR)**: During inference, Foreground Enhanced Attention (FEA) temporally integrates keys and values from VDM and VDM-A to utilize correct **intrinsic motion pattern (IMP)**.
+- **Spatial Consistency Guided Re-Weighting (SCR)**: During training, $\mathcal{L}_{\mathcal{G}}$ uses Gaussian distribution to re-weighting the loss on spatial consistency. During inference, temporal LoRA weight ($\omega^t$) is adaptively adjusted by spatial consistency, and spatial LoRA weight ($\omega^s$) is determined by a classifier model based on the prompt pair and weighting dictionary.
+- **Synergistic Temporal Re-Attention (STR)**: During inference, Foreground Enhanced Attention (FEA) integrates the IMP knowledge of edited subject within VDM into VDM-A by concatenating their keys and values.

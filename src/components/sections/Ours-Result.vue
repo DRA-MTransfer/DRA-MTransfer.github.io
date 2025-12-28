@@ -25,11 +25,11 @@ const paths = [
     "IMP & Multi Subject", 
     [
       [ 
-        "/ours-result/ours-man.mp4", 
+        "/ours-result/ours-horse-bird-new.mp4", 
         "Source: Man",
         "Edit: Horse",
-        "Edit: Horse with Man",
-        "Edit: Plane",
+        "Source: Birds",
+        "Edit: Planes",
       ],
       [
         "/ours-result/ours-bear-dog-rabbit-bird.mp4", 
@@ -56,7 +56,7 @@ const paths = [
     "IMP & Different Size", 
     [
       [ 
-        "/ours-result/ours-rocket.mp4", 
+        "/ours-result/ours-rocket-new.mp4", 
         "Source: Rocket",
         "Edit: Small Bird",
         "Edit: Big Bird",

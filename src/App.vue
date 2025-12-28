@@ -103,7 +103,6 @@ a {
 /* 鼠标焦点悬浮在链接上的颜色装饰 */
 a:hover {
   color: #848484;
-  border-bottom: dotted;
 }
 
 p > img {

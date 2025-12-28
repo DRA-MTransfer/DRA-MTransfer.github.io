@@ -10,7 +10,7 @@ import abstract from '../mds/abstract.mdx';
       <el-col :xs="24" :sm="20" :md="18" :lg="16" :xl="14">
           <el-container class="video-container">
             <video muted preload autoplay playsinline loop>
-              <source src="/ours-result/teaser.mp4" type="video/mp4">
+              <source src="/ours-result/teaser-new.mp4" type="video/mp4">
             </video>
           </el-container>
       </el-col>
